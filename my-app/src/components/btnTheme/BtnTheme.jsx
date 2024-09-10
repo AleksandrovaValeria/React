@@ -1,23 +1,24 @@
 import { useEffect, useRef } from "react";
 import { useLocalStorage } from "../../utils/useLocalStorage";
+import detectDarkMode from "../../utils/detectDarkMode";
 import "./styles.css";
 
 export default function BtnTheme() {
-  const [theme, setTheme] = useLocalStorage('theme', 'light');
+  const [theme, setTheme] = useLocalStorage("theme", detectDarkMode());
   const btnRef = useRef(null);
 
   useEffect(() => {
-    if (theme === 'dark') {
-      document.body.classList.add('dark');
-      btnRef.current.classList.add('dark-mode-btn--active')
+    if (theme === "dark") {
+      document.body.classList.add("dark");
+      btnRef.current.classList.add("dark-mode-btn--active");
     } else {
-      document.body.classList.remove('dark');
-      btnRef.current.classList.remove('dark-mode-btn--active')
+      document.body.classList.remove("dark");
+      btnRef.current.classList.remove("dark-mode-btn--active");
     }
-  }, [theme])
+  }, [theme]);
 
   function changeTheme() {
-    setTheme((currentValue) => currentValue === 'light' ? 'dark' : 'light')
+    setTheme((currentValue) => (currentValue === "light" ? "dark" : "light"));
   }
 
   return (
