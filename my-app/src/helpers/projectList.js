@@ -4,18 +4,21 @@ const projectList = [
     skills: "React, Node.js, MongoDB",
     img: "01.jpg",
     imgBig: "01-big.jpg",
+    git: "https://github.com",
   },
   {
     title: "Video service",
     skills: "React, Node.js, MongoDB",
     img: "02.jpg",
     imgBig: "02-big.jpg",
+    git: "https://github.com",
   },
   {
     title: "Video portal",
     skills: "React, Node.js, MongoDB",
     img: "03.jpg",
     imgBig: "03-big.jpg",
+    git: "https://github.com",
   },
   {
     title: "Dating app",

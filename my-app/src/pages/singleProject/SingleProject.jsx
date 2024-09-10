@@ -23,7 +23,7 @@ export default function SingleProject() {
             <p>Skills: {data.skills}</p>
           </div>
 
-          <BtnGitHub link="https://github.com" />
+          {data.git && <BtnGitHub link="https://github.com" />}
         </div>
       </div>
     </main>
