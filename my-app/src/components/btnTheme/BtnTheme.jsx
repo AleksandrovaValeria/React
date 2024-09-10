@@ -1,8 +1,9 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
+import { useLocalStorage } from "../../utils/useLocalStorage";
 import "./styles.css";
 
 export default function BtnTheme() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useLocalStorage('theme', 'light');
   const btnRef = useRef(null);
 
   useEffect(() => {
