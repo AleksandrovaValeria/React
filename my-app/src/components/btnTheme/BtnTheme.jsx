@@ -17,6 +17,15 @@ export default function BtnTheme() {
     }
   }, [theme]);
 
+  useEffect(() => {
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (event) => {
+        const newTheme = event.matches ? "dark" : "light";
+        setTheme(newTheme);
+      });
+  }, []);
+
   function changeTheme() {
     setTheme((currentValue) => (currentValue === "light" ? "dark" : "light"));
   }
