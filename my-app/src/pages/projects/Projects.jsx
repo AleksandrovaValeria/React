@@ -10,7 +10,7 @@ export default function Projects() {
         <h2 className="title-1">Projects</h2>
         <ul className="projects">
           {projectList.map((item, index) => (
-            <ProjectCard key={index} title={item.title} image={item.img} />
+            <ProjectCard key={index} title={item.title} image={item.img} index={item.index} />
           ))}
         </ul>
       </div>
