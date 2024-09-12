@@ -3,6 +3,7 @@ import BtnGitHub from "../../components/btnGitHub/BtnGitHub";
 import { projectList } from "../../helpers/projectList";
 
 import "./styles.css";
+import BtnWebsite from "../../components/btnWebsite/BtnWebsite";
 
 export default function SingleProject() {
   const { id } = useParams();
@@ -23,7 +24,9 @@ export default function SingleProject() {
             <p>Skills: {data.skills}</p>
           </div>
 
-          {data.git && <BtnGitHub link="https://github.com" />}
+          {data.git && <BtnGitHub link={data.git} />}
+
+          {data.link && <BtnWebsite link={data.link} />}
         </div>
       </div>
     </main>

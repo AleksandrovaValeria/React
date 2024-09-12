@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export default function ProjectCar(props) {
+export default function ProjectCard(props) {
   const { image, title, index } = props;
   return (
     <li className="project">

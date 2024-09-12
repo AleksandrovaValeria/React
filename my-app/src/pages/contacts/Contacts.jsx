@@ -9,7 +9,7 @@ export default function Contacts() {
         <ul className="content-list">
           <li className="content-list__item">
             <h2 className="title-2">Location</h2>
-            <p>Moscow, Saint Petersburg</p>
+            <p>Russia, Saint Petersburg</p>
           </li>
           <li className="content-list__item">
             <h2 className="title-2">Telegram / WhatsApp</h2>
