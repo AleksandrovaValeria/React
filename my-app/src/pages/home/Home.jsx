@@ -7,16 +7,16 @@ export default function Home() {
         <div className="header__wrapper">
           <h1 className="header__title">
             <strong>
-              Hi, my name is <em>Yuri</em>
+              Hi, my name is <em>Valeriya</em>
             </strong>
             <br />a frontend developer
           </h1>
           <div className="header__text">
             <p>with passion for learning and creating.</p>
           </div>
-          <a href="#!" className="btn">
+          {/* <a href="#!" className="btn">
             Download CV
-          </a>
+          </a> */}
         </div>
       </header>
 
@@ -26,13 +26,8 @@ export default function Home() {
             <li className="content-list__item">
               <h2 className="title-2">Frontend</h2>
               <p>
-                JavaScript, TypeScript, ReactJS, Angular, Redux, HTML, CSS, NPM,
-                BootStrap, MaterialUI, Yarn, TailwindCSS, StyledComponents
+                JavaScript, TypeScript, ReactJS, Rest API, PHP, HTML5, CSS3, BootStrap, Figma, Pixso, Zeplin, Adobe Photoshop
               </p>
-            </li>
-            <li className="content-list__item">
-              <h2 className="title-2">Backend</h2>
-              <p>NodeJS, MySQL, MongoDB, PHP, Laravel</p>
             </li>
           </ul>
         </div>
